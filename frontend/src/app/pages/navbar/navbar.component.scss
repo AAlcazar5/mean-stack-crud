@@ -1,0 +1,12 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+
+  .active-link {
+    color: black;
+  }
+
+  span {
+    margin-left: 40px;
+  }
+}

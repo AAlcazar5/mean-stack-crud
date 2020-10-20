@@ -1,0 +1,95 @@
+@import '../../../main-styles.scss';
+
+.note-manager-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 800px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  width: 250px;
+  background: white;
+
+  padding: 42px;
+
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.note-list-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 40px;
+
+  .top-bar {
+    margin-bottom: 20px;
+    display: flex;
+
+    .title {
+      flex-grow: 1;
+    }
+  }
+
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  flex-grow: 1;
+
+  .list-menu-item {
+    display: flex;
+
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 5px;
+
+    width: 100%;
+    margin-bottom: 10px;
+
+    &:hover {
+      background: $light;
+    }
+
+    &.is-active {
+      background-color: $light-red;
+      color: $dark-red;
+    }
+  }
+}
+
+.note {
+  display: flex;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+  align-items: center;
+
+  .note-text {
+    display: flex;
+    flex-grow: 1;
+  }
+
+}
+
+.circle-add-button {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+}
